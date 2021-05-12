@@ -11,8 +11,8 @@ const GOT_query = axios.create({
 );
 
 export default {
-    getHouses(){
-        return GOT_query.get('/houses');
+    getHouses(perPage, page){
+        return GOT_query.get('/houses?pageSize=' + perPage + '&page=' + page);
     },
     getHouse(id){
         return GOT_query.get('/houses/'+id);

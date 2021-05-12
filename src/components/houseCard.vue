@@ -12,6 +12,7 @@ export default {
   name: "HouseCard",
   props: {
     house: Object,
+    // required: true,
   },
   computed:{
     houseId(){
